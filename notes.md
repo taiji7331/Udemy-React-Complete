@@ -461,3 +461,121 @@ Reactの基礎の詳細的な情報の内容になった
 
 ### Chapter 59: Module Introduction
 
+Reactのより複雑なポイントの話も出る：JSX、ステート、コンポーネント構成など
+
+### Chapter 60: You Don't Have To Use JSX!
+
+Reactプロジェクトを作るのに、JSXを使うのは一番便利で書きやすいだけど、
+もししたいならJSXなしで、React.createElementなどでも書くことができる
+
+### Chapter 61: Working with Fragments
+
+Reactのコンポーネントのreturn文には親タグ一つしかできないため、複数タグreturnしたいときは何か(divなど)
+に書き込まれることしないといけない。でも、そのdivはDOMにも表示されるため、divではなくReactが提供される
+Fragmentタグや<>の空タグも使える  
+[プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/04%20Essentials%20Deep%20Dive/02-fragments)
+
+### Coding Exercise 13: Using Fragments
+
+DOMに表示されるものを使わずコンポーネントの中で2つのタグをreturnする  
+結果:  
+```
+function Summary({ text }) {
+    return (
+        <>
+            <h1>Summary</h1>
+            <p>{text}</p>
+        </>
+    );
+}
+```
+
+### Chapter 62: When Should You Split Components?
+
+いつ大きなコンポーネントをそれぞれの小さなコンポーネントに分けるべきかの説明
+
+### Chapter 63: Splitting Components By Feature & State
+
+画面の大きな部分で分けることが普通で、現在のプロジェクトの大きな部分で新しいコンポーネントを作成
+することについての説明  
+[プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/04%20Essentials%20Deep%20Dive/03-splitting-components)
+
+### Chapter 64: Problem: Props Are Not Forwarded To Inner Elements
+
+問題：内のエレメントにプロップが届いていない  
+もしカスタムコンポーネントにidやclassなどの属性を設定すると、そのカスタムコンポーネント
+の中のタグに自動的に設定することはない。そのために、プロキシプロップを使うことができる（次のレッスン）
+
+### Chapter 65: Forwarding Props To Wrapped Elements
+
+プロキシプロップ、またはプロップフォワードという機能を使って、ラッパーコンポーネントから内のタグに
+属性の設定ができる（JavaScriptの...演算子を使う）  
+[プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/04%20Essentials%20Deep%20Dive/04-forwarding-props)
+
+### Coding Exercise 14: Forwarding Props
+
+プロップを使って動的にインプットのタイプを設定する  
+結果:  
+```
+export default function Input({richText, ...props}) {
+    let input = <input {...props}></input>;
+  
+    if (richText) {
+        input = <textarea {...props}></textarea>
+    } 
+  
+    return input
+}
+```
+
+### Chapter 66: Working with Multiple JSX Slots
+
+もしラッパーコンポーネントを使いたいけど、childrenが複数ある場合、JSXをプロップとして渡すことができる  
+[プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/04%20Essentials%20Deep%20Dive/05-multiple-jsx-slots)
+
+### Chapter 67: Setting Component Types Dynamically
+
+ラッパーコンポーネントの中でも動的にタグのタイプ（div, ulなど）をプロップとして設定することもできる。
+気を付けるポイントは、HTMLの内部タグなら文字列（"div", "ul"）でカスタムコンポーネントなら関数名
+（Section）で設定することが必要  
+[プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/04%20Essentials%20Deep%20Dive/06-dynamic-component-types)
+
+### Chapter 68: Setting Default Prop Values
+
+プロップのデフォルトを受け取る側で=を使って設定もできることの説明
+
+### Coding Exercise 15: Creating Flexible Components
+
+色々な状況で表示が変わるコンポーネントの作成
+結果:  
+```
+export default function Button({mode = "filled", children, Icon, ...props}) {
+ 
+    let buttonClass = `button ${mode}-button`;
+    
+    if (Icon) {
+        buttonClass += " icon-button";
+    }
+    
+    return (
+        <button {...props} className={buttonClass}>
+            <span>
+                {children}
+            </span>
+            {Icon &&
+                <span className="button-icon">
+                    <Icon />
+                </span>
+            }
+        </button>
+    );
+}
+```
+
+### Chapter 69: Onwards To The Next Project & Advanced Concepts
+
+次のプロジェクト〇×ゲームの説明と準備  
+[プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/04%20Essentials%20Deep%20Dive/07-tic-tac-toe-starting-project)
+
+### Chapter 70: Not All Content Must Go Into Components
+
