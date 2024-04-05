@@ -546,7 +546,7 @@ export default function Input({richText, ...props}) {
 
 ### Coding Exercise 15: Creating Flexible Components
 
-色々な状況で表示が変わるコンポーネントの作成
+色々な状況で表示が変わるコンポーネントの作成  
 結果:  
 ```
 export default function Button({mode = "filled", children, Icon, ...props}) {
@@ -578,4 +578,125 @@ export default function Button({mode = "filled", children, Icon, ...props}) {
 [プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/04%20Essentials%20Deep%20Dive/07-tic-tac-toe-starting-project)
 
 ### Chapter 70: Not All Content Must Go Into Components
+
+Reactには、ほとんどのコードはコンポーネントに入っているけど、もし変わらなくステートが必要ないものであれば
+（ページヘッダーなど）直接index.htmlに書き込んでも問題ないの説明
+
+### Chapter 71: Closer Look: public/ vs assets/ for Image Storage
+
+イメージの格納には、public/フォルダまたはsrc/...フォルダに格納することができ、
+public/フォルダの場合誰でもブラウザからアクセスできる。
+もしそれが目標であれば、public/フォルダにイメージを格納するべきだが、
+もしイメージアクセスを管理したい場合、src/フォルダのどこか（例えばsrc/assets/images/）に格納するべき。
+
+### Chapter 72: New Project: First Steps Towards Our Tic-Tac-Toe Game
+
+プロジェクトの最初の段階の説明：シンプルなレイアウトの作成
+
+### Chapter 73: Concept Repetition: Splitting Components & Building Reusable Components
+
+コンセプト復讐：コンポーネントの分けと再使用できるコンポーネントの作成についての説明
+
+### Chapter 74: Concept Repetition: Working With State
+
+コンセプト復讐：ステートの管理についての説明  
+[プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/04%20Essentials%20Deep%20Dive/08-working-with-state)
+
+### Chapter 75: Component Instances Work In Isolation!
+
+同じコンポーネントを複数回使っても、そのコンポーネントが個別のインスタンスになり、ステートも
+共有していないことについての説明
+
+### Chapter 76: Conditional Content & A Suboptimal Way Of Updating State
+
+いくつかのソース修正で条件がある表示やステート管理を追加した
+
+### Chapter 77: Best Practice: Updating State Based On Old State Correctly
+
+ベストプラクティス：正確に旧ステートから新ステートの更新のについての説明  
+ステートを更新するとき、関数を使ったほうが正しい  
+[プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/04%20Essentials%20Deep%20Dive/09-updating-state-based-on-old-state)
+
+### Chapter 78: User Input & Two-Way-Binding
+
+ユーザが入力する値を取得して画面が反映する方法についての説明  
+[プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/04%20Essentials%20Deep%20Dive/10-two-way-binding)
+
+### Coding Exercise 16: Two-Way-Binding
+
+ユーザ入力を画面で反映させる  
+結果:  
+```
+function App() {
+    const [feedback, setFeedback] = React.useState();
+    const [student, setStudent] = React.useState();
+    
+    function handleFeedbackChange(event) {
+        setFeedback(event.target.value);
+    }
+    
+    function handleStudentChange(event) {
+        setStudent(event.target.value);
+    }
+    
+    return (
+        <>
+            <section id="feedback">
+                <h2>Please share some feedback</h2>
+                <p>
+                    <label>Your Feedback</label>
+                    <textarea value={feedback} onChange={handleFeedbackChange} />
+                </p>
+                <p>
+                    <label>Your Name</label>
+                    <input type="text" value={student} onChange={handleStudentChange} />
+                </p>
+            </section>
+            <section id="draft">
+                <h2>Your feedback</h2>
+
+                <Review feedback={feedback} student={student} />
+
+                <p>
+                    <button>Save</button>
+                </p>
+            </section>
+        </>
+    );
+}
+```
+
+### Chapter 79: Rendering Multi-Dimensional Lists
+
+2次元配列から動的にリストを表示させることについての説明  
+[プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/04%20Essentials%20Deep%20Dive/11-multi-dimensional-lists)
+
+### Chapter 80: Best Practice: Updating Object State Immutably
+
+ベストプラクティス：配列などのステートを更新すると、直接いじることよりコピーを作成して
+そのコピーをいじって返す方法が正しい話についての説明  
+[プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/04%20Essentials%20Deep%20Dive/12-updating-state-immutably)
+
+### Chapter 81: Lifting State Up [Core Concept]
+
+Reactの主なポイント：ステートを子コンポーネントから親コンポーネントに上げる方法についての説明  
+[プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/04%20Essentials%20Deep%20Dive/13-lifiting-state-up)
+
+### Chapter 82: Avoid Intersecting States!
+
+最終的に同じ情報を使って複数箇所にステートを更新するより、そのステートを1つにまとめて必要な場所に渡した
+ほうが正しいということについての説明  
+[プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/04%20Essentials%20Deep%20Dive/14-avoid-intersecting-state)
+
+### Chapter 83: Prefer Computer Values & Avoid Unnecessary State Management
+
+ステートを更新するとき、ほかのステートを触ることよりそのステートからコピーしてコピーのほうを触ること
+が正しいということについての説明  
+[プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/04%20Essentials%20Deep%20Dive/15-prefer-computed-values)
+
+### Chapter 84: Deriving State From Props
+
+プロップから取得した値を使って計算して表示する情報についての説明
+
+### Chapter 85: Sharing State Across Components
 
