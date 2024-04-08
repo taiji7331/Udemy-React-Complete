@@ -755,7 +755,9 @@ Reactの基礎の練習のためのプロジェクト
 
 ### Chapter 96: Module Introduction & A Challenge For You!
 
-練習プロジェクト内容の紹介と概要
+練習プロジェクト内容の紹介と概要  
+コース内容を進む前に、自分でプロジェクトやってみる  
 [プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/05%20Essentials%20Practice/01-starting-project)
 
 ### Chapter 97: Adding a Header Component
+
