@@ -700,3 +700,62 @@ Reactの主なポイント：ステートを子コンポーネントから親コ
 
 ### Chapter 85: Sharing State Across Components
 
+同じステートで複数のコンポーネントの管理をすることについての説明
+
+### Chapter 86: Reducing State Management & Identifying Unnecessary State
+
+ステートではなく、計算された値のほうが正しいときもあり、できるだけステートが必要ないようにソース
+を書くことを目指したほうがいいことの説明
+
+### Chapter 87: Disabling Buttons Conditionally
+
+条件で項目を無効にする方法についての説明  
+[プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/04%20Essentials%20Deep%20Dive/16-disabling-buttons)
+
+### Chapter 88: Outsourcing Data Into A Separate File
+
+ゲームの勝つ条件の説明で、データファイルダウンロード
+
+### Chapter 89: Lifting Computed Values Up
+
+ボードの作成もプロップとして渡して、その情報をほかのところで使うようにした
+
+### Chapter 90: Deriving Computed Values From Other Computed Values
+
+勝ったプレイヤーの計算の説明
+
+### Chapter 91: Tic-Tac-Toe Game: The "Game Over" Screen & Checking for a Draw
+
+引き分けの条件も追加してゲーム終了の画面の更新  
+[プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/04%20Essentials%20Deep%20Dive/17-game-over-checking-for-draw)
+
+### Chapter 92: Why Immutability Matters - Always!
+
+バグフィックス：計算された配列がステートの参照よりコピーして作成が正しい理由を一例での説明
+
+### Chapter 93: When NOT To Lift State Up
+
+コンポーネントからステートを上に上げるのはだめの時もあり、
+そのコンポーネントがたくさん更新されて、親のコンポーネントはその頻度で更新されては困るときや、
+複数コンポーネントのインスタンスがそれぞれステートを持っているときなど
+
+### Chapter 94: An Alternative To Lifting State Up
+
+ステートを上げるより違う方法として、新しいステートを作ってそれを子コンポーネントで
+設定する方法の説明と実装
+
+### Chapter 95: Final Polishing & Improving Components
+
+最終クリーンアップのため、コードから関数に移動させて読みやすくしてプロジェクト完成  
+[プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/04%20Essentials%20Deep%20Dive/18-finished)
+
+## Section 5: React Essentials - Practice Project
+
+Reactの基礎の練習のためのプロジェクト
+
+### Chapter 96: Module Introduction & A Challenge For You!
+
+練習プロジェクト内容の紹介と概要
+[プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/05%20Essentials%20Practice/01-starting-project)
+
+### Chapter 97: Adding a Header Component
