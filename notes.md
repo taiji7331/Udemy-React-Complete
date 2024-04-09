@@ -805,3 +805,99 @@ ReactでのCSSスタイルの説明
 
 ### Chapter 105: Splitting CSS Code Across Multiple Files
 
+普通のwebアプリと同じようにCSSファイルをインポートできる。  
+もししたい場合、CSSファイルを分けてそれぞれのコンポーネントにインポートできる
+
+### Chapter 106: Styling React Apps with Vanilla CSS - Pros & Cons
+
+CSSを使うのいいポイント：html（jsx）と別に扱っている、いつものCSSと同じように書ける、
+もう一人（チーム）に任せることができる  
+CSSを使うの悪いポイント：自分で書くなら理解しないといけない、
+ルールがコンポーネントに限られていないのでコンフリクトが発生する可能性がある
+
+### Chapter 107: Vanilla CSS Styles Are NOT Scoped To Components!
+
+コンポーネントファイルにインポートしても、CSSファイルはページのheadタグに入るため、
+ページ全体に反映される。インポートされているコンポーネントに限られていない。
+そのため、ルールを気を付けないといけない
+
+### Chapter 108: Styling React Apps with Inline Styles
+
+Reactプロジェクトにインラインスタイルを付けると、普通のhtmlと書き方が違う。  
+style="color: red"などはできないため、style={{color: 'red'}}のほうが正しい  
+インラインスタイルを使うのいいポイント：書きやすい、そのコンポーネントに限られている,
+動的なスタイルがやりやすい
+インラインスタイルを使うの悪いポイント：CSSの書き方が理解しないといけない、
+すべてのコンポーネントのスタイルを書かないといけない、CSSとJSXが区別されていない
+
+### Chapter 109: Dynamic & Conditional Inline Styles
+
+インラインスタイルを使うと、動的なスタイルがやりやすくなる。  
+そのままスタイルルールにJavaScript分岐などを書ける
+
+### Coding Exercise 17: Dynamic Styling with Inline Styles
+
+押下されたボタンによりスタイルが変わるように書く  
+結果：  
+```
+function App() {
+    const [buttonColor, setButtonColor] = React.useState('white');
+    
+    function handleClick(color) {
+        setButtonColor(color);
+    }
+    
+    return (
+        <div id="app">
+            <h1 style={{
+                color: buttonColor 
+            }}>CSS is great!</h1>
+            <menu>
+                <li>
+                    <button
+                        onClick={() => handleClick('green')}>Yes</button>
+                </li>
+                <li>
+                    <button
+                        onClick={() => handleClick('red')}>No</button>
+                </li>
+            </menu>
+        </div>
+    );
+}
+```
+
+### Chapter 110: Dynamic & Conditional Styling with CSS Files & CSS Classes
+
+CSSファイルを使うと、動的にスタイルが変わるならコンポーネントにクラスを付けることができる。
+個別なクラスならそのまま分岐を使うといいけど、複数で違う条件があるとテンプレート文字列が使える
+
+### Coding Exercise 18: Dynamic Styling with CSS Classes
+
+前の問題と同じ、ボタンによりスタイルが変わるが、今回はクラスを使う  
+結果：  
+```
+function App() {
+    const [className, setClassName] = React.useState('');
+    
+    function handleClick(buttonColor) {
+        setClassName(`highlight-${buttonColor}`);
+    }
+    
+    return (
+        <div id="app">
+            <h1 className={className}>CSS is great!</h1>
+            <menu>
+                <li>
+                    <button onClick={() => handleClick("green")}>Yes</button>
+                </li>
+                <li>
+                    <button onClick={() => handleClick("red")}>No</button>
+                </li>
+            </menu>
+        </div>
+    );
+}
+```
+
+### Chapter 111: Scoping CSS Rules with CSS Modules
