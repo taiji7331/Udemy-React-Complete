@@ -761,3 +761,47 @@ Reactの基礎の練習のためのプロジェクト
 
 ### Chapter 97: Adding a Header Component
 
+ヘッダーのコンポーネントの作り方
+
+### Chapter 98: Getting Started with a User Input Component
+
+ユーザ入力コンポーネントのレイアウト作り方
+
+### Chapter 99: Handling Events & Using Two-Way-Binding
+
+ユーザ入力コンポーネントのデータ管理の作り方  
+[プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/05%20Essentials%20Practice/02-user-input-two-way-binding)
+
+### Chapter 100: Lifting State Up
+
+ユーザ入力コンポーネントのステートを親コンポーネントで管理して、
+他のコンポーネントで使える形の作り方  
+[プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/05%20Essentials%20Practice/03-lifting-state-up)
+
+### Chapter 101: Computing Values & Properly Handling Number Values
+
+データ計算関数の使い方、JavaScriptのインプットから取得したデータを数値に変換する方法  
+※JavaScriptで入力データが必ず文字列として扱うので、数値に変換するなら+を頭につけることができる  
+[プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/05%20Essentials%20Practice/04-computing-values)
+
+### Chapter 102: Outputting Results in a List & Deriving More Values
+
+出力テーブルの作り方、計算されたデータの使い方  
+[プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/05%20Essentials%20Practice/05-outputting-results-in-a-list)
+
+### Chapter 103: Outputting Content Conditionally
+
+プロジェクトの終わり、条件がある表示の作り方  
+[プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/05%20Essentials%20Practice/06-finished)
+
+## Section 6: Styling React Components
+
+ReactでのCSSスタイルの説明
+
+### Chapter 104: Module Introduction & Starting Project
+
+プロジェクトの説明、どうやってReactでCSSをコンポーネントに付けるなどについての内容になる  
+[プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/07%20Styling/01-starting-project)
+
+### Chapter 105: Splitting CSS Code Across Multiple Files
+
