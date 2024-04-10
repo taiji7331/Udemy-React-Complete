@@ -901,3 +901,22 @@ function App() {
 ```
 
 ### Chapter 111: Scoping CSS Rules with CSS Modules
+
+CSSファイルをmoduleと名を付けると（例えば、Header.cssからHeader.module.cssへ）
+Reactのビルドシステム内ではそのCSSファイルがそのインポートされているコンポーネント
+に限られて使われるようになる。内部では、クラス名がユニークになる。  
+CSS Modulesを使うといいポイント：CSSはJSXから別に扱っている、CSSの書き方が変わらない、
+別開発者が書いてもコンフリクトにならない、コンポーネントファイルに限られている  
+CSS Modulesを使うと悪いポイント：CSSが理解しないといけない、たくさんの小さなCSSファイルがあるはず
+
+### Chapter 112: Introducing "Styled Components" (Third-party Package)
+
+外部パッケージstyled-componentsを使って、特別なスタイルがあるコンポーネントを作成することができる。  
+書き方がテンプレートを使うことで、styled.div`CSSがここに書く`のような形になる。
+
+### Chapter 113: Creating Flexible Components with Styled Components
+
+styled-componentsを使って、childrenやプロップがそのまま使えるのでほぼソースコードの書き方が変わらない
+
+### Chapter 114: Dynamic & Conditional Styling with Styled Components
+
