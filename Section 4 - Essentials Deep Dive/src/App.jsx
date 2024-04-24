@@ -118,7 +118,7 @@ export default function App() {
         )}
         <GameBoard onSelectSquare={handleSelectSquare} board={gameBoard} />
       </div>
-      <Log turns={gameTurns} />
+      <Log turns={gameTurns} player={players[activePlayer]} />
     </main>
   );
 }
