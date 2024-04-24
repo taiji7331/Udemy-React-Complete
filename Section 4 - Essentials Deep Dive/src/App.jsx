@@ -73,9 +73,10 @@ export default function App() {
   function handleSelectSquare(rowIndex, colIndex) {
     setGameTurns((prevTurns) => {
       const currentPlayer = deriveActivePlayer(prevTurns);
+      const playerName = players[currentPlayer]
 
       const updatedTurns = [
-        { square: { row: rowIndex, col: colIndex }, player: currentPlayer },
+        { square: { row: rowIndex, col: colIndex }, player: currentPlayer,  playerName: playerName },
         ...prevTurns,
       ];
 
@@ -118,7 +119,7 @@ export default function App() {
         )}
         <GameBoard onSelectSquare={handleSelectSquare} board={gameBoard} />
       </div>
-      <Log turns={gameTurns} player={players[activePlayer]} />
+      <Log turns={gameTurns} />
     </main>
   );
 }
