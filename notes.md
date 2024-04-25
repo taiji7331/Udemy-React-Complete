@@ -920,3 +920,86 @@ styled-componentsを使って、childrenやプロップがそのまま使える�
 
 ### Chapter 114: Dynamic & Conditional Styling with Styled Components
 
+styled-componentsで動的にスタイルを変更する方法についての説明で、
+propsを使ってもいいけど、もしブラウザがすでに使っている命名だとワーニングが出るため、
+規則として自分が定義するスタイルのためのpropsは$から先頭文字を命名したほうがいい。
+
+### Chapter 115: Styled Components: Pseudo Selectors, Nested Rules, & Media Queries
+
+styled-componentsの中で子供のものもスタイルつけることができる。
+そうするため、スタイル定義で子供の前に&を書くと「このコンポーネントの子供」となる。
+:hoverなども同じくできる。
+
+### Chapter 116: Creating Reusable Components & Component Combinations
+
+styled-componentsでも個別コンポーネントファイルを作ることができる。それで同じコンポーネントを
+何回も使うこともできる。  
+styled-componentsを使うのいいポイント：早く簡単に追加できる、Reactっぽい考え方、
+スタイルはコンポーネントに限られている
+styled-componentsを使うの悪いポイント：CSSの書き方が理解しないといけない、
+ReactとCSSの区別がない、たくさん小さめのラッパーコンポーネントを作らないといけない
+
+### Chapter 117: Introducing Tailwind CSS For React App Styling
+
+tailwindというCSSライブラリの準備と基準書き方についての説明。
+tailwindはクラス名を付けて細かくCSSの設定を調整できる。
+
+### Chapter 118: Adding & Using Tailwind CSS In A React Project
+
+tailwindの設定をカスタマイズもできる。そして、普通のCSSルールを追加することもできる。
+
+### Chapter 119: Tailwind: Media Queries & Pseudo Selectors
+
+クラス名にhover:やmd:などの書き方で、スクリーンサイズや動作によりいろいろなスタイル
+を付けることもできる。
+
+### Chapter 120: Dynamic & Conditional Styling with Tailwind
+
+tailwindを使って動的スタイルのやり方についての説明
+
+### Chapter 121: Migrating The Demo App to Tailwind CSS
+
+最後のスタイルをtailwindにマイグレーション完了  
+[プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/07%20Styling/06-tailwind-finished)
+
+### Chapter 122: Tailwind CSS: Pros & Cons
+
+Reactでtailwindを使うには便利点が多い  
+tailwindを使うのいいポイント：CSSあまり知らなくても使える、開発が早い、ルールを定義しないためコンフリクトがない、
+カスタマイズができる
+tailwindを使うの悪いポイント：classNameの長さが結構長い、スタイル変更にはjsxの修正が必要、
+たくさんの小さ目のコンポーネントを作らないといけない（またはコピペが多い）
+
+### Coding Exercise 19: Dynamic Styles
+
+ボタン押下するとテキストの色が赤になって、そして再押下するとまた白に戻ること  
+結果：  
+```
+export default function App() {
+    const [clicked, setClicked] = React.useState(false);
+    
+    function handleClick() {
+        setClicked((isClicked) => !isClicked);
+    }
+    
+    return (
+        <div>
+            <p style={{color: clicked ? "red" : "white"}}>Style me!</p>
+            <button onClick={handleClick}>Toggle style</button>
+        </div>
+    );
+}
+```
+
+## Section 7: Debugging React Apps
+
+Reactのデバグについての説明とアドバイスになる
+
+### Chapter 123: Module Introduction
+
+Reactのエラーメッセージやブラウザの開発者ツールの使い方がこれから説明がある
+
+### Chapter 124: The Starting Project
+
+エラー潰し用のプロジェクトのインポート  
+[プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/06%20Debugging/01-starting-project)
