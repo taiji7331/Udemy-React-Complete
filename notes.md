@@ -1003,3 +1003,68 @@ Reactのエラーメッセージやブラウザの開発者ツールの使い方
 
 エラー潰し用のプロジェクトのインポート  
 [プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/06%20Debugging/01-starting-project)
+
+### Chapter 125: Understanding React Error Messages
+
+エラーメッセージの読み方とバグ探しの流れについての説明
+
+### Chapter 126: Using the Browser Debugger & Breakpoints
+
+ブラウザの開発者ツールでデバッグモードとブレイクポイントの使い方とバグ探しの流れについての説明
+
+### Chapter 127: Understanding React's "Strict Mode"
+
+StrictModeという機能の使い方と便利点についての説明
+
+### Chapter 128: Using the React DevTools (Browser Extension)
+
+React Development Toolsというブラウザエクステンションの使い方と便利点についての説明
+
+### Coding Exercise 20: Fix Errors
+
+誰かが書いたコードにすべての問題を探して解決する  
+修正前:  
+```
+export default function App() {
+    const clickHandler = () => {
+        console.log('Clicked!');
+    };
+    
+    return (
+        <Div>
+          <h2>You're logged in!</h2>
+          <p>Welcome to your user profile!</p>
+          <button onclick={clickHandler}>Click me!</button>
+        </Div>
+    );
+}
+```
+
+修正後:  
+```
+export default function App() {
+    const clickHandler = () => {
+        console.log('Clicked!');
+    };
+    
+    return (
+        <div>
+          <h2>You're logged in!</h2>
+          <p>Welcome to your user profile!</p>
+          <button onClick={clickHandler}>Click me!</button>
+        </div>
+    );
+}
+```
+
+## Section 8: Working with Refs & Portals
+
+Reactのもう少しアドバンスト機能のRefsとPortalsの説明になる
+
+### Chapter 129: Module Introduction & Starting Project
+
+ReactのRefsとPortalsという機能の軽い説明とプロジェクトの目標の説明  
+[プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/08%20Refs%20Portals/01-starting-project)
+
+### Chapter 130: Repetition: Managing User Input with State (Two-Way Binding)
+
