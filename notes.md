@@ -1068,3 +1068,183 @@ ReactのRefsとPortalsという機能の軽い説明とプロジェクトの目�
 
 ### Chapter 130: Repetition: Managing User Input with State (Two-Way Binding)
 
+復讐：インプットの値と画面表示値の連携のやり方の再説明
+
+### Chapter 131: Repetition: Fragments
+
+復讐：フラグメントエレメントの再説明
+
+### Chapter 132: Introducing Refs: Connecting & Accessing HTML Elements via Refs
+
+useRefというReactフックの説明と書き方の紹介。  
+refをプロップとして渡したら、そのref変数を関数などに使えば連携されているエレメントもそのまま使える
+
+### Chapter 133: Manipulating the DOM via Refs
+
+refを使うとDOMのエレメントを直接いじることができるけど、それはReactの規則外なので注意が必要
+
+### Coding Exercise 21: Accessing DOM Elements with "Refs"
+
+hiddenインプットのclickメソッドを呼ぶためにrefを使う  
+結果:  
+```
+function App() {
+    const clickInput = React.useRef();
+    
+    function handleClick() {
+        clickInput.current.click();
+    }
+    
+    return (
+        <div id="app">
+        <p>Please select an image</p>
+        <p>
+            <input data-testid="file-picker" type="file" accept="image/*" ref={clickInput} />
+            <button onClick={handleClick}>Pick Image</button>
+        </p>
+        </div>
+    );
+}
+```
+
+### Chapter 134: Refs vs State Values
+
+ステートとレフの違い  
+ステート：変更したらコンポーネントが再ロードする、UIに影響がある値に使ったほうがお勧め、
+後ろでしか使わない値に使う必要がない  
+レフ：変更したらコンポーネントが再ロードしない、直接DOMのアクセスと変更できる、ブラウザAPIもアクセスできる
+
+### Chapter 135: Adding Challenges to the Demo Project
+
+プロジェクトの次のステップの準備のため、再利用できるコンポーネントの作成と構造
+
+### Chapter 136: Setting Timers & Managing State
+
+タイマーゲームの準備のために関数や変数の作成と構造
+
+### Chapter 137: Using Refs for More Than "DOM Element Connections"
+
+レフでDOMのエレメントの変更だけではなく、後ろでしか使われていない値も連携と管理できる
+
+### Coding Exercise 22: Managing Other Values with Refs
+
+タイマーの管理で開始と終了の機能を作る  
+結果:  
+```
+const timer = React.useRef();
+    
+function handleStartWorkout() {
+    timer.current = setTimeout(handleStopWorkout, time);
+}
+
+function handleStopWorkout() {
+    clearTimeout(timer.current)
+    onComplete();
+}
+```
+
+### Chapter 138: Adding a Modal Component
+
+Reactでモーダルエレメントの作成・表示のやり方の説明
+
+### Chapter 139: Forwarding Refs to Custom Components
+
+refを別のコンポーネントに渡すには、プロップだけじゃ足りないので、
+ReactのフックforwardRefを使ってできる。
+
+### Coding Exercise 23: Forwarding Refs
+
+refとrefフォワードを使ってインプットを作る  
+結果:  
+```
+export function App() {
+    const name = React.useRef();
+    const email = React.useRef();
+    
+    function handleSaveData() {
+        const enteredName = name.current.value;
+        const enteredEmail = email.current.value;
+        
+        userData.name = enteredName;
+        userData.email = enteredEmail;
+
+        console.log(userData);
+    }
+
+    return (
+        <div id="app">
+            <Input type="text" label="Your Name" ref={name} />
+            <Input type="email" label="Your E-Mail" ref={email} />
+            <p id="actions">
+                <button onClick={handleSaveData}>Save Data</button>
+            </p>
+        </div>
+    );
+}
+
+const Input = React.forwardRef(function Input({label, ...props}, ref) {
+    return (
+        <p className="control">
+            <label>{label}</label>
+            <input ref={ref} {...props}/>
+        </p>
+    );
+});
+```
+
+### Chapter 140: Exposing Component APIs via the useImperativeHandle Hook
+
+useImperativeHandleというフックでコンポーネントでメソッドの行動を定義して、refで連携している
+行動もそれを呼ぶことができる
+
+### Coding Exercise 24: Exposing Component APIs
+
+formコンポーネントでclearという関数を作って、そとのコンポーネントが使えるようにする  
+結果:  
+```
+export function App() {
+    const form = React.useRef();
+    function handleRestart() {
+        form.current.clear();
+    }
+
+    return (
+        <div id="app">
+            <button onClick={handleRestart}>Restart</button>
+            <Form ref={form} />
+        </div>
+    );
+}
+
+const Form = React.forwardRef(function Form(props, ref) {
+    const form = React.useRef();
+    
+    React.useImperativeHandle(ref, () => {
+        return {
+            clear() {
+                form.current.reset();
+            }
+        }
+    });
+    
+    return (
+        <form ref={form}>
+            <p>
+                <label>Name</label>
+                <input type="text" />
+            </p>
+
+            <p>
+                <label>Email</label>
+                <input type="email" />
+            </p>
+            <p id="actions">
+                <button>Save</button>
+            </p>
+        </form>
+    );
+});
+```
+
+### Chapter 141: More Examples: When To Use Refs & State
+
