@@ -1248,3 +1248,75 @@ const Form = React.forwardRef(function Form(props, ref) {
 
 ### Chapter 141: More Examples: When To Use Refs & State
 
+setTimeoutとsetIntervalという時間を計測ブラウザメソッドの違いと使い方の説明
+
+### Chapter 142: Sharing State Across Components
+
+ステートとメソッドを別コンポーネントに渡す方法（復讐）
+
+### Chapter 143: Enhancing the Demo App "Result Modal"
+
+簡単な割り算でゲームのスコアを計算して表示する方法
+
+### Chapter 144: Closing the Modal via the ESC (Escape) Key
+
+モーダルを閉じるのにescキーを押下することもできるが、現在閉じるボタンにしか機能が入れていないので、
+onCloseというプロップに機能を入れたらちゃんとした動きになる
+
+### Chapter 145: Introducing and Understanding "Portals"
+
+モーダルなど実際に使われているところとDOMで入れたい場所が違う場合、
+ポータルという機能が移動してくれる
+
+### Coding Exercise 25: Working with Portals
+
+ポータルを使って呼び出しているコンポーネントをDOMの別のところで入れるようにする  
+結果:  
+```
+function App() {
+    const [toastVisible, setToastVisible] = React.useState(false);
+    
+    function handleEnrol() {
+        setToastVisible(true);
+
+        setTimeout(() => {
+            setToastVisible(false);
+        }, 3000);
+    }
+
+    return (
+        <div id="app">
+            {toastVisible && <Toast message="Enrolled successfully!" />}
+            <article>
+                <h2>React Course</h2>
+                <p>
+                    A course that teaches you React from the ground up and in great depth!
+                </p>
+                <button onClick={handleEnrol}>Enrol</button>
+            </article>
+        </div>
+    );
+}
+
+export default function Toast({ message }) {
+    
+    return ReactDOM.createPortal(
+        <aside className="toast" data-testid="toast">
+            <p>{message}</p>
+        </aside>,
+        document.querySelector('body')
+    );
+}
+```
+
+## Section 9: Practice Project: Project Management App (with Components, State, Refs & More)
+
+今までの内容すべての練習プロジェクトになる
+
+### Chapter 146: Module Introduction & Starting Project
+
+これからの練習プロジェクトの目標の説明  
+[プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/09%20Practice%20Project%20-%20Project%20Management/01-starting-project)
+
+### Chapter 147: Adding a "Projects Sidebar" Component
+
