@@ -1316,7 +1316,28 @@ export default function Toast({ message }) {
 ### Chapter 146: Module Introduction & Starting Project
 
 これからの練習プロジェクトの目標の説明  
+レッスンを進め前に実際にやってみること  
 [プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/09%20Practice%20Project%20-%20Project%20Management/01-starting-project)
 
 ### Chapter 147: Adding a "Projects Sidebar" Component
+
+左のメニューの構造を作成する
+
+### Chapter 148: Styling the Sidebar & Button with Tailwind CSS
+
+左のメニューとその中のボタンのスタイル
+
+### Chapter 149: Adding the "New Project" Component & A Reusable "Input" Component
+
+インプットフォームのコンポーネントの作成とプロジェクトの構造
+
+### Chapter 150: Styling Buttons & Inputs with Tailwind CSS
+
+インプットとボタンのスタイル
+
+### Chapter 151: Splitting Components to Split JSX & Tailwind Styles (for Higher Reusability)
+
+プロジェクトが選択されていない場合表示する画面の作成と同じボタン使うからボタンコンポーネントの作成
+
+### Chapter 152: Managing State to Switch Between Components
 
