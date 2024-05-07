@@ -1341,3 +1341,19 @@ export default function Toast({ message }) {
 
 ### Chapter 152: Managing State to Switch Between Components
 
+ステートで表示されている画面の切り替えができるように機能追加
+
+### Chapter 153: Collecting User Input with Refs & Forwarded Refs
+
+プロジェクト作成画面の入力を取得してステートとして保持する
+
+### Chapter 154: Handling Project Creation & Updating the UI
+
+プロジェクト作成するとサイドバーメニューに表示されるように機能追加
+
+### Chapter 155: Validating User Input & Showing an Error Modal via useImperativeHandle
+
+インプットバリデーションのためエラーモーダルの作成と表示（スタイルはまだ）
+
+### Chapter 156: Styling the Modal via Tailwind CSS
+
