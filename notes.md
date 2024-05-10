@@ -1357,3 +1357,15 @@ export default function Toast({ message }) {
 
 ### Chapter 156: Styling the Modal via Tailwind CSS
 
+モーダルのスタイルとプロジェクト作成画面のキャンセルボタンの機能追加
+
+### Chapter 157: Making Projects Selectable & Viewing Project Details
+
+サイドバーメニューのプロジェクト選択機能追加とデバグ
+
+### Chapter 158: Handling Project Deletion
+
+選択されてプロジェクトの表示画面でプロジェクトの削除できるようにボタン追加
+
+### Chapter 159: Adding "Project Tasks" & A Tasks Component
+
