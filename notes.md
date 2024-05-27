@@ -1369,3 +1369,20 @@ export default function Toast({ message }) {
 
 ### Chapter 159: Adding "Project Tasks" & A Tasks Component
 
+プロジェクトにタスク項目の追加構造作成（まだ動かない）
+
+### Chapter 160: Managing Tasks & Understanding Prop Drilling
+
+プロップドリルを使って、AppコンポーネントからNewTaskコンポーネントまでステート管理を渡して、
+タスク管理できるように作成
+
+### Chapter 161: Clearing Tasks & Fixing Minor Bugs
+
+タスク削除機能追加、小さな不具合解決。
+
+## Section 10: React's Context API & useReducer - Advanced State Management
+
+Reactのアドバンスト機能についての紹介
+
+### Chapter 162: Module Introduction
+
