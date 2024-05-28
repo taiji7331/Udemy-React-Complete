@@ -1386,3 +1386,87 @@ Reactのアドバンスト機能についての紹介
 
 ### Chapter 162: Module Introduction
 
+このコースセクションの内容の紹介：  
+* プロップドリルとその解決方法
+* コンポーネント構成
+* コンテキストでステート渡し
+* レデューサーの使い方
+
+### Chapter 163: Understanding Prop Drilling & Project Overview
+
+親コンポーネントから子コンポーネントにプロップを渡して、さらにその子コンポーネントの子コンポーネントやそれよりも深いコンポーネントに渡すために使わずに渡しているだけ時はプロップドリルという。  
+
+### Chapter 164: Prop Drilling: Component Composition as a Solution
+
+もし複数層にプロップを渡すとき、一番上のコンポーネントで下の層を構成して、ほかのコンポーネントをラッパーに変えることができるけど、これは毎回使うことではなく、ほかのドリル解決方法とともに使えること。
+
+### Chapter 165: Introducing the Context API
+
+ContextというReactのAPIを使って、アプリのどの範囲でもステートなどを管理することができ、
+簡単に渡したり更新したりすることができる。
+
+### Chapter 166: Creating & Providing The Context
+
+Contextの生成方法とコンポーネントのラップ方法の説明
+
+### Chapter 167: Consuming the Context
+
+Contextを使うコンポーネントに渡して、ステートとして使う方法の説明
+
+### Chapter 168: Linking the Context to State
+
+Contextに関数も入れて子コンポーネントに渡してステートを更新することもできる
+
+### Chapter 169: A Different Way Of Consuming Context
+
+useContextフックを使うことがベストなのだが、もう一つのやり方が存在している。
+それは、context.Consumerのコンポーネントを使ってjsxコードをラップする方法になる。
+古い方法でモダンなプロジェクトはほとんどuseContextフックを使っているはず。
+
+### Chapter 170: What Happens When Context Values Change?
+
+ステートと同じように、もしコンテキストの値に何か変更があった場合、使っているコンポーネント
+が再実行されることについての説明
+
+### Chapter 171: Migrating the Entire Demo Project to use the Context API
+
+Contextを使って他のいつくかのところのプロップを削除してそのままコンテキストを使うように書き換える
+
+### Chapter 172: Outsourcing Context & State Into a Separate Provider Component
+
+コンテキストとステート管理関係のコードを別ファイルに移動して、それがラッパーコンポーネントに変更する
+
+### Coding Exercise 26: Creating & Using Context
+
+ダークモードの機能をコンテキストでデモアプリに追加  
+結果:  
+```
+export const ThemeContext = React.createContext({
+    theme: '',
+    toggleTheme: () => {}
+});
+
+export default function ThemeContextProvider({children}) {
+  const [theme, setTheme] = React.useState('light');
+  
+  function handleToggleTheme() {
+      setTheme((prevTheme) => {
+          return prevTheme === 'light' ? 'dark' : 'light';
+      })
+  }
+  
+  const ctxValue = {
+      theme: theme,
+      toggleTheme: handleToggleTheme
+  }
+  
+  return (
+      <ThemeContext.Provider value={ctxValue}>
+        {children}
+      </ThemeContext.Provider>
+  )
+}
+```
+
+### Chapter 173: Introducing the useReducer Hook
+
