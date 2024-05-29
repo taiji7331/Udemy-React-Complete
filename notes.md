@@ -1470,3 +1470,83 @@ export default function ThemeContextProvider({children}) {
 
 ### Chapter 173: Introducing the useReducer Hook
 
+useReducerでもステートの管理ができて、複雑な値をシンプルに変換してくれる
+
+### Chapter 174: Dispatching Actions & Editing State with useReducer
+
+useReducerのdispatch関数の作り方と使い方の説明、useStateとの違い
+
+### Coding Exercise 27: Using useReducer()
+
+useReducer(useStateではなく)を使ってカウンター機能をアプリに追加する  
+結果:  
+```
+export function counterReducer(state, action) {
+    let updatedCount = state.count;
+    if (action.type === 'INCREMENT') {
+        updatedCount += 1;
+        return {
+            count: updatedCount
+        }
+    }
+    if (action.type === 'DECREMENT') {
+        updatedCount -= 1;
+        return {
+            count: updatedCount
+        }
+    }
+    if (action.type === 'RESET') {
+        updatedCount = 0;
+        return {
+            count: updatedCount
+        }
+    }
+    
+    return state;
+}
+
+function App() {
+    const [counterState, counterDispatch] = React.useReducer(counterReducer,
+        {
+            count: 0
+        }
+    );
+    
+    function handleIncrement() {
+        counterDispatch({
+            type: 'INCREMENT'
+        });
+    }
+    
+    function handleDecrement() {
+        counterDispatch({
+            type: 'DECREMENT'
+        });
+    }
+    
+    function handleReset() {
+        counterDispatch({
+            type: 'RESET'
+        });
+    }
+    
+    return (
+      <div id="app">
+        <h1>The (Final?) Counter</h1>
+        <p id="actions">
+            <button onClick={handleIncrement}>Increment</button>
+            <button onClick={handleDecrement}>Decrement</button>
+            <button onClick={handleReset}>Reset</button>
+        </p>
+        <p id="counter">{counterState.count}</p>
+      </div>
+    );
+}
+```
+
+## Section 11: Handling Side Effects & Working with the useEffect() Hook
+
+useEffectを使ってブラウザのエフェクトの使い方
+
+### Chapter 175: Module Introduction & Starting Project
+
