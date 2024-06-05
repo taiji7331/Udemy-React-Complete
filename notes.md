@@ -52,40 +52,44 @@ Reactのプロジェクト作成についての説明
 
 なぜReactは特別なプロジェクトが必要（他のwebプロジェクトと比較）
 
+### Chapter 11: Course Setup
+
+使うIDEの違いの説明
+
 ## Section 2: JavaScript Refresher
 
 Reactの説明に入る前に、必要なJavaScript知識の復讐の内容になった
 
-### Chapter 11: Module Introduction
+### Chapter 12: Module Introduction
 
 JavaScriptの復讐の軽い説明
 
-### Chapter 12: Starting Project
+### Chapter 13: Starting Project
 
 プロジェクトのサンプルコードの説明  
 [サンプルアプリ（モジュールの最後の時点）](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/02%20JS%20Refresher)
 
-### Chapter 13: Adding JavaScript To A Page & How React Projects Differ
+### Chapter 14: Adding JavaScript To A Page & How React Projects Differ
 
 HTMLとJavaScriptの関係、JavaScriptファイルの実行条件、Reactのその違い
 
-### Chapter 14: React Projects Use a Build Process
+### Chapter 15: React Projects Use a Build Process
 
 Reactの自動操作についての説明
 
-### Chapter 15: "import" & "export"
+### Chapter 16: "import" & "export"
 
 JavaScriptのimportとexport文の説明
 
-### Chapter 16: Revisiting Variables & Values
+### Chapter 17: Revisiting Variables & Values
 
 JavaScriptで変数とその値の説明
 
-### Chapter 17: Revisiting Operators
+### Chapter 18: Revisiting Operators
 
 JavaScriptでの演算子（+, -, *, /, =, <, >）の説明
 
-### Chapter 18: Revisiting Functions & Parameters
+### Chapter 19: Revisiting Functions & Parameters
 
 JavaScriptでの関数とその引数の説明
 
@@ -99,19 +103,19 @@ function combine(a, b, c) {
 }
 ```
 
-### Chapter 19: Arrow Functions
+### Chapter 20: Arrow Functions
 
 アロー関数(() => {})の説明、普通の関数との違いなど
 
-### Chapter 20: More on the Arrow Function Syntax
+### Chapter 21: More on the Arrow Function Syntax
 
 アロー関数の続き、別の書き方や短くするための技
 
-### Chapter 21: Revisiting Objects & Classes
+### Chapter 22: Revisiting Objects & Classes
 
 JavaScriptのオブジェクトやクラスの説明
 
-### Chapter 22: Arrays & Array Methods like map()
+### Chapter 23: Arrays & Array Methods like map()
 
 JavaScriptの配列とそのための関数（特にmap）
 
@@ -123,47 +127,47 @@ JavaScriptの配列とそのための関数（特にmap）
 const editedArray = numberArray.map((item) => ({ val: item }));
 ```
 
-### Chapter 23: Destructuring
+### Chapter 24: Destructuring
 
 配列とJSオブジェクトの分割の説明
 
-### Chapter 24: Destructuring in Function Parameter Lists
+### Chapter 25: Destructuring in Function Parameter Lists
 
 関数の引数の中でも分割できる説明
 
-### Chapter 25: The Spread Operator
+### Chapter 26: The Spread Operator
 
 スプレッド演算子（...）の説明
 
-### Chapter 26: Revisiting Control Structures
+### Chapter 27: Revisiting Control Structures
 
 コード流れの操作の説明（分岐、ループなど）
 
-### Chapter 27: Manipulating the DOM - Not With React!
+### Chapter 28: Manipulating the DOM - Not With React!
 
 DOMの操作について、特にReactではしないことが大事
 
-### Chapter 28: Using Functions as Values
+### Chapter 29: Using Functions as Values
 
 関数は値として扱うことの説明
 
-### Chapter 29: Defining Functions Inside Of Functions
+### Chapter 30: Defining Functions Inside Of Functions
 
 関数の中でも関数が定義して使うことができる説明
 
-### Chapter 30: Reference vs Primitive Values
+### Chapter 31: Reference vs Primitive Values
 
 プリミティブ値（数値、文字列など）と参考値（配列など）の違いの説明
 
-### Chapter 31: Next-Gen JavaScript - Summary
+### Chapter 32: Next-Gen JavaScript - Summary
 
 JS ES6以降の違いについての説明（letとconst、アロー関数、スプレッドとレスト演算子など）
 
-### Chapter 32: JS Array Functions
+### Chapter 33: JS Array Functions
 
 配列関係の関数の復讐
 
-### Chapter 33: Module Resources
+### Chapter 34: Module Resources
 
 JavaScriptの復讐のために役に立つリソース
 
@@ -171,29 +175,29 @@ JavaScriptの復讐のために役に立つリソース
 
 Reactの基礎の内容になった
 
-### Chapter 34: Module Introduction
+### Chapter 35: Module Introduction
 
 Reactの基礎の軽い説明
 
-### Chapter 35: It's All About Components! [Core Concept]
+### Chapter 36: It's All About Components! [Core Concept]
 
 Reactの主なポイント：コンポーネントについての説明
 
-### Chapter 36: Setting Up The Starting Project
+### Chapter 37: Setting Up The Starting Project
 
 プロジェクトの準備  
 [プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/03%20React%20Essentials/01-starting-project)
 
-### Chapter 37: JSX & React Components [Core Concept]
+### Chapter 38: JSX & React Components [Core Concept]
 
 Reactの主なポイント：JSX言語とReactのコンポーネントの作成の説明
 
-### Chapter 38: Creating & Using a First Custom Component
+### Chapter 39: Creating & Using a First Custom Component
 
 初めてのカスタムコンポーネントの作成  
 [プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/03%20React%20Essentials/02-creating-using-first-component)
 
-### Chapter 39: A Closer Look: Components & File Extensions
+### Chapter 40: A Closer Look: Components & File Extensions
 
 コンポーネントとファイル拡張子の詳細説明
 
@@ -209,7 +213,7 @@ export function MainGoal() {
 }
 ```
 
-### Chapter 40: How React Handles Components & How It Builds a "Component Tree" [Core Concept]
+### Chapter 41: How React Handles Components & How It Builds a "Component Tree" [Core Concept]
 
 Reactの主なポイント：コンポーネントツリーについての説明
 
@@ -217,12 +221,12 @@ Reactの主なポイント：コンポーネントツリーについての説明
 
 クイズ：コンポーネントとJSX
 
-### Chapter 41: Using & Outputting Dynamic Values [Core Concept]
+### Chapter 42: Using & Outputting Dynamic Values [Core Concept]
 
 Reactの主なポイント：動的なデータの出力についての説明  
 [プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/03%20React%20Essentials/03-using-outputting-dynamic-values)
 
-### Chapter 42: Setting HTML Attributes Dynamically & Loading Image Files
+### Chapter 43: Setting HTML Attributes Dynamically & Loading Image Files
 
 Reactの主なポイント：動的にHTML属性の設定と画像ファイルのロードについての説明  
 [プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/03%20React%20Essentials/04-html-attributes-dynamically-image-files)
@@ -244,17 +248,17 @@ export function User() {
 }
 ```
 
-### Chapter 43: Making Components Reusable with Props [Core Concept]
+### Chapter 44: Making Components Reusable with Props [Core Concept]
 
 Reactの主なポイント：プロップを使ってコンポーネントの複製についての説明  
 [プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/03%20React%20Essentials/05-cmp-props)
 
-### Chapter 44: Alternative Props Syntaxes
+### Chapter 45: Alternative Props Syntaxes
 
 Reactの主なポイント：プロップのそれぞれの書き方についての説明  
 [プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/03%20React%20Essentials/06-alternative-props-syntax)
 
-### Chapter 45: More Props Syntaxes
+### Chapter 46: More Props Syntaxes
 
 より多くのプロップの書き方についての説明
 
@@ -277,17 +281,17 @@ export function CourseGoal({title, description}) {
 
 クイズ：動的なデータとプロップ
 
-### Chapter 46: Best Practice: Storing Components in Files & Using a Good Project Structure
+### Chapter 47: Best Practice: Storing Components in Files & Using a Good Project Structure
 
 ベストプラクティス：コンポーネントを別ファイルに保存についての説明  
 [プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/03%20React%20Essentials/07-storing-cmp-in-files)
 
-### Chapter 47: Storing Component Style Files Next To Components
+### Chapter 48: Storing Component Style Files Next To Components
 
 コンポーネントで使われるスタイルシートも別ファイルに保存についての説明  
 [プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/03%20React%20Essentials/08-styles-next-to-cmp)
 
-### Chapter 48: Component Composition: The special "children" Prop [Core Concept]
+### Chapter 49: Component Composition: The special "children" Prop [Core Concept]
 
 Reactの主なポイント：特別なchildrenプロップについての説明  
 [プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/03%20React%20Essentials/09-composition-children-prop)
@@ -307,12 +311,12 @@ export default function Card({children, name}) {
 }
 ```
 
-### Chapter 49: Reacting to Events [Core Concept]
+### Chapter 50: Reacting to Events [Core Concept]
 
 Reactの主なポイント：イベントの反応についての説明  
 [プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/03%20React%20Essentials/10-reacting-to-events)
 
-### Chapter 50: Passing Functions as Values to Props
+### Chapter 51: Passing Functions as Values to Props
 
 プロップに関数を渡すことについての説明
 [プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/03%20React%20Essentials/11-passing-functions-as-values)
@@ -327,7 +331,7 @@ Reactの主なポイント：イベントの反応についての説明
 </p>
 ```
 
-### Chapter 51: Passing Custom Arguments to Event Functions
+### Chapter 52: Passing Custom Arguments to Event Functions
 
 イベントの関数に引数を渡すことについての説明
 [プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/03%20React%20Essentials/12-passing-custom-arguments-to-event-fn)
@@ -346,12 +350,12 @@ Reactの主なポイント：イベントの反応についての説明
 
 クイズ：ベストプラクティスとイベント
 
-### Chapter 52: How NOT to Update the UI - A Look Behind The Scenes of React [Core Concept]
+### Chapter 53: How NOT to Update the UI - A Look Behind The Scenes of React [Core Concept]
 
 Reactの主なポイント：UIの更新はJavaScriptと違うことについての説明  
 [プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/03%20React%20Essentials/13-how-not-to-update-ui)
 
-### Chapter 53: Managing State & Using Hooks [Core Concept]
+### Chapter 54: Managing State & Using Hooks [Core Concept]
 
 Reactの主なポイント：ステートとフックについての説明  
 [プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/03%20React%20Essentials/14-managing-state)
@@ -375,7 +379,7 @@ return (
 );
 ```
 
-### Chapter 54: Deriving & Outputting Data Based on State
+### Chapter 55: Deriving & Outputting Data Based on State
 
 ステートの情報を使って計算と出力についての説明  
 [プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/03%20React%20Essentials/15-deriving-computing-values)
@@ -384,7 +388,7 @@ return (
 
 クイズ：ステートと計算された値
 
-### Chapter 55: Rendering Content Conditionally
+### Chapter 56: Rendering Content Conditionally
 
 条件により画面の表示が違うことについての説明  
 [プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/03%20React%20Essentials/16-rendering-content-conditionally)
@@ -408,7 +412,7 @@ return (
 );
 ```
 
-### Chapter 56: CSS Styling & Dynamic Styling
+### Chapter 57: CSS Styling & Dynamic Styling
 
 CSSと動的なスタイルについての説明  
 [プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/03%20React%20Essentials/17-css-styling-dynamic-styles)
@@ -426,7 +430,7 @@ return (
 );
 ```
 
-### Chapter 57: Outputting List Data Dynamically
+### Chapter 58: Outputting List Data Dynamically
 
 動的にリストのデータを出力ことについての説明  
 [プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/03%20React%20Essentials/18-outputting-list-data)
@@ -451,7 +455,7 @@ export default function App() {
 
 クイズ：条件がある表示と動的なリスト
 
-### Chapter 58: Module Summary
+### Chapter 59: Module Summary
 
 Reactの基礎の復讐
 
@@ -459,16 +463,16 @@ Reactの基礎の復讐
 
 Reactの基礎の詳細的な情報の内容になった
 
-### Chapter 59: Module Introduction
+### Chapter 60: Module Introduction
 
 Reactのより複雑なポイントの話も出る：JSX、ステート、コンポーネント構成など
 
-### Chapter 60: You Don't Have To Use JSX!
+### Chapter 61: You Don't Have To Use JSX!
 
 Reactプロジェクトを作るのに、JSXを使うのは一番便利で書きやすいだけど、
 もししたいならJSXなしで、React.createElementなどでも書くことができる
 
-### Chapter 61: Working with Fragments
+### Chapter 62: Working with Fragments
 
 Reactのコンポーネントのreturn文には親タグ一つしかできないため、複数タグreturnしたいときは何か(divなど)
 に書き込まれることしないといけない。でも、そのdivはDOMにも表示されるため、divではなくReactが提供される
@@ -490,23 +494,23 @@ function Summary({ text }) {
 }
 ```
 
-### Chapter 62: When Should You Split Components?
+### Chapter 63: When Should You Split Components?
 
 いつ大きなコンポーネントをそれぞれの小さなコンポーネントに分けるべきかの説明
 
-### Chapter 63: Splitting Components By Feature & State
+### Chapter 64: Splitting Components By Feature & State
 
 画面の大きな部分で分けることが普通で、現在のプロジェクトの大きな部分で新しいコンポーネントを作成
 することについての説明  
 [プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/04%20Essentials%20Deep%20Dive/03-splitting-components)
 
-### Chapter 64: Problem: Props Are Not Forwarded To Inner Elements
+### Chapter 65: Problem: Props Are Not Forwarded To Inner Elements
 
 問題：内のエレメントにプロップが届いていない  
 もしカスタムコンポーネントにidやclassなどの属性を設定すると、そのカスタムコンポーネント
 の中のタグに自動的に設定することはない。そのために、プロキシプロップを使うことができる（次のレッスン）
 
-### Chapter 65: Forwarding Props To Wrapped Elements
+### Chapter 66: Forwarding Props To Wrapped Elements
 
 プロキシプロップ、またはプロップフォワードという機能を使って、ラッパーコンポーネントから内のタグに
 属性の設定ができる（JavaScriptの...演算子を使う）  
@@ -528,19 +532,19 @@ export default function Input({richText, ...props}) {
 }
 ```
 
-### Chapter 66: Working with Multiple JSX Slots
+### Chapter 67: Working with Multiple JSX Slots
 
 もしラッパーコンポーネントを使いたいけど、childrenが複数ある場合、JSXをプロップとして渡すことができる  
 [プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/04%20Essentials%20Deep%20Dive/05-multiple-jsx-slots)
 
-### Chapter 67: Setting Component Types Dynamically
+### Chapter 68: Setting Component Types Dynamically
 
 ラッパーコンポーネントの中でも動的にタグのタイプ（div, ulなど）をプロップとして設定することもできる。
 気を付けるポイントは、HTMLの内部タグなら文字列（"div", "ul"）でカスタムコンポーネントなら関数名
 （Section）で設定することが必要  
 [プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/04%20Essentials%20Deep%20Dive/06-dynamic-component-types)
 
-### Chapter 68: Setting Default Prop Values
+### Chapter 69: Setting Default Prop Values
 
 プロップのデフォルトを受け取る側で=を使って設定もできることの説明
 
@@ -572,52 +576,52 @@ export default function Button({mode = "filled", children, Icon, ...props}) {
 }
 ```
 
-### Chapter 69: Onwards To The Next Project & Advanced Concepts
+### Chapter 70: Onwards To The Next Project & Advanced Concepts
 
 次のプロジェクト〇×ゲームの説明と準備  
 [プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/04%20Essentials%20Deep%20Dive/07-tic-tac-toe-starting-project)
 
-### Chapter 70: Not All Content Must Go Into Components
+### Chapter 71: Not All Content Must Go Into Components
 
 Reactには、ほとんどのコードはコンポーネントに入っているけど、もし変わらなくステートが必要ないものであれば
 （ページヘッダーなど）直接index.htmlに書き込んでも問題ないの説明
 
-### Chapter 71: Closer Look: public/ vs assets/ for Image Storage
+### Chapter 72: Closer Look: public/ vs assets/ for Image Storage
 
 イメージの格納には、public/フォルダまたはsrc/...フォルダに格納することができ、
 public/フォルダの場合誰でもブラウザからアクセスできる。
 もしそれが目標であれば、public/フォルダにイメージを格納するべきだが、
 もしイメージアクセスを管理したい場合、src/フォルダのどこか（例えばsrc/assets/images/）に格納するべき。
 
-### Chapter 72: New Project: First Steps Towards Our Tic-Tac-Toe Game
+### Chapter 73: New Project: First Steps Towards Our Tic-Tac-Toe Game
 
 プロジェクトの最初の段階の説明：シンプルなレイアウトの作成
 
-### Chapter 73: Concept Repetition: Splitting Components & Building Reusable Components
+### Chapter 74: Concept Repetition: Splitting Components & Building Reusable Components
 
 コンセプト復讐：コンポーネントの分けと再使用できるコンポーネントの作成についての説明
 
-### Chapter 74: Concept Repetition: Working With State
+### Chapter 75: Concept Repetition: Working With State
 
 コンセプト復讐：ステートの管理についての説明  
 [プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/04%20Essentials%20Deep%20Dive/08-working-with-state)
 
-### Chapter 75: Component Instances Work In Isolation!
+### Chapter 76: Component Instances Work In Isolation!
 
 同じコンポーネントを複数回使っても、そのコンポーネントが個別のインスタンスになり、ステートも
 共有していないことについての説明
 
-### Chapter 76: Conditional Content & A Suboptimal Way Of Updating State
+### Chapter 77: Conditional Content & A Suboptimal Way Of Updating State
 
 いくつかのソース修正で条件がある表示やステート管理を追加した
 
-### Chapter 77: Best Practice: Updating State Based On Old State Correctly
+### Chapter 78: Best Practice: Updating State Based On Old State Correctly
 
 ベストプラクティス：正確に旧ステートから新ステートの更新のについての説明  
 ステートを更新するとき、関数を使ったほうが正しい  
 [プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/04%20Essentials%20Deep%20Dive/09-updating-state-based-on-old-state)
 
-### Chapter 78: User Input & Two-Way-Binding
+### Chapter 79: User Input & Two-Way-Binding
 
 ユーザが入力する値を取得して画面が反映する方法についての説明  
 [プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/04%20Essentials%20Deep%20Dive/10-two-way-binding)
@@ -666,85 +670,85 @@ function App() {
 }
 ```
 
-### Chapter 79: Rendering Multi-Dimensional Lists
+### Chapter 80: Rendering Multi-Dimensional Lists
 
 2次元配列から動的にリストを表示させることについての説明  
 [プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/04%20Essentials%20Deep%20Dive/11-multi-dimensional-lists)
 
-### Chapter 80: Best Practice: Updating Object State Immutably
+### Chapter 81: Best Practice: Updating Object State Immutably
 
 ベストプラクティス：配列などのステートを更新すると、直接いじることよりコピーを作成して
 そのコピーをいじって返す方法が正しい話についての説明  
 [プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/04%20Essentials%20Deep%20Dive/12-updating-state-immutably)
 
-### Chapter 81: Lifting State Up [Core Concept]
+### Chapter 82: Lifting State Up [Core Concept]
 
 Reactの主なポイント：ステートを子コンポーネントから親コンポーネントに上げる方法についての説明  
 [プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/04%20Essentials%20Deep%20Dive/13-lifiting-state-up)
 
-### Chapter 82: Avoid Intersecting States!
+### Chapter 83: Avoid Intersecting States!
 
 最終的に同じ情報を使って複数箇所にステートを更新するより、そのステートを1つにまとめて必要な場所に渡した
 ほうが正しいということについての説明  
 [プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/04%20Essentials%20Deep%20Dive/14-avoid-intersecting-state)
 
-### Chapter 83: Prefer Computer Values & Avoid Unnecessary State Management
+### Chapter 84: Prefer Computer Values & Avoid Unnecessary State Management
 
 ステートを更新するとき、ほかのステートを触ることよりそのステートからコピーしてコピーのほうを触ること
 が正しいということについての説明  
 [プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/04%20Essentials%20Deep%20Dive/15-prefer-computed-values)
 
-### Chapter 84: Deriving State From Props
+### Chapter 85: Deriving State From Props
 
 プロップから取得した値を使って計算して表示する情報についての説明
 
-### Chapter 85: Sharing State Across Components
+### Chapter 86: Sharing State Across Components
 
 同じステートで複数のコンポーネントの管理をすることについての説明
 
-### Chapter 86: Reducing State Management & Identifying Unnecessary State
+### Chapter 87: Reducing State Management & Identifying Unnecessary State
 
 ステートではなく、計算された値のほうが正しいときもあり、できるだけステートが必要ないようにソース
 を書くことを目指したほうがいいことの説明
 
-### Chapter 87: Disabling Buttons Conditionally
+### Chapter 88: Disabling Buttons Conditionally
 
 条件で項目を無効にする方法についての説明  
 [プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/04%20Essentials%20Deep%20Dive/16-disabling-buttons)
 
-### Chapter 88: Outsourcing Data Into A Separate File
+### Chapter 89: Outsourcing Data Into A Separate File
 
 ゲームの勝つ条件の説明で、データファイルダウンロード
 
-### Chapter 89: Lifting Computed Values Up
+### Chapter 90: Lifting Computed Values Up
 
 ボードの作成もプロップとして渡して、その情報をほかのところで使うようにした
 
-### Chapter 90: Deriving Computed Values From Other Computed Values
+### Chapter 91: Deriving Computed Values From Other Computed Values
 
 勝ったプレイヤーの計算の説明
 
-### Chapter 91: Tic-Tac-Toe Game: The "Game Over" Screen & Checking for a Draw
+### Chapter 92: Tic-Tac-Toe Game: The "Game Over" Screen & Checking for a Draw
 
 引き分けの条件も追加してゲーム終了の画面の更新  
 [プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/04%20Essentials%20Deep%20Dive/17-game-over-checking-for-draw)
 
-### Chapter 92: Why Immutability Matters - Always!
+### Chapter 93: Why Immutability Matters - Always!
 
 バグフィックス：計算された配列がステートの参照よりコピーして作成が正しい理由を一例での説明
 
-### Chapter 93: When NOT To Lift State Up
+### Chapter 94: When NOT To Lift State Up
 
 コンポーネントからステートを上に上げるのはだめの時もあり、
 そのコンポーネントがたくさん更新されて、親のコンポーネントはその頻度で更新されては困るときや、
 複数コンポーネントのインスタンスがそれぞれステートを持っているときなど
 
-### Chapter 94: An Alternative To Lifting State Up
+### Chapter 95: An Alternative To Lifting State Up
 
 ステートを上げるより違う方法として、新しいステートを作ってそれを子コンポーネントで
 設定する方法の説明と実装
 
-### Chapter 95: Final Polishing & Improving Components
+### Chapter 96: Final Polishing & Improving Components
 
 最終クリーンアップのため、コードから関数に移動させて読みやすくしてプロジェクト完成  
 [プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/04%20Essentials%20Deep%20Dive/18-finished)
@@ -753,43 +757,43 @@ Reactの主なポイント：ステートを子コンポーネントから親コ
 
 Reactの基礎の練習のためのプロジェクト
 
-### Chapter 96: Module Introduction & A Challenge For You!
+### Chapter 97: Module Introduction & A Challenge For You!
 
 練習プロジェクト内容の紹介と概要  
 コース内容を進む前に、自分でプロジェクトやってみる  
 [プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/05%20Essentials%20Practice/01-starting-project)
 
-### Chapter 97: Adding a Header Component
+### Chapter 98: Adding a Header Component
 
 ヘッダーのコンポーネントの作り方
 
-### Chapter 98: Getting Started with a User Input Component
+### Chapter 99: Getting Started with a User Input Component
 
 ユーザ入力コンポーネントのレイアウト作り方
 
-### Chapter 99: Handling Events & Using Two-Way-Binding
+### Chapter 100: Handling Events & Using Two-Way-Binding
 
 ユーザ入力コンポーネントのデータ管理の作り方  
 [プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/05%20Essentials%20Practice/02-user-input-two-way-binding)
 
-### Chapter 100: Lifting State Up
+### Chapter 101: Lifting State Up
 
 ユーザ入力コンポーネントのステートを親コンポーネントで管理して、
 他のコンポーネントで使える形の作り方  
 [プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/05%20Essentials%20Practice/03-lifting-state-up)
 
-### Chapter 101: Computing Values & Properly Handling Number Values
+### Chapter 102: Computing Values & Properly Handling Number Values
 
 データ計算関数の使い方、JavaScriptのインプットから取得したデータを数値に変換する方法  
 ※JavaScriptで入力データが必ず文字列として扱うので、数値に変換するなら+を頭につけることができる  
 [プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/05%20Essentials%20Practice/04-computing-values)
 
-### Chapter 102: Outputting Results in a List & Deriving More Values
+### Chapter 103: Outputting Results in a List & Deriving More Values
 
 出力テーブルの作り方、計算されたデータの使い方  
 [プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/05%20Essentials%20Practice/05-outputting-results-in-a-list)
 
-### Chapter 103: Outputting Content Conditionally
+### Chapter 104: Outputting Content Conditionally
 
 プロジェクトの終わり、条件がある表示の作り方  
 [プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/05%20Essentials%20Practice/06-finished)
@@ -798,30 +802,30 @@ Reactの基礎の練習のためのプロジェクト
 
 ReactでのCSSスタイルの説明
 
-### Chapter 104: Module Introduction & Starting Project
+### Chapter 105: Module Introduction & Starting Project
 
 プロジェクトの説明、どうやってReactでCSSをコンポーネントに付けるなどについての内容になる  
 [プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/07%20Styling/01-starting-project)
 
-### Chapter 105: Splitting CSS Code Across Multiple Files
+### Chapter 106: Splitting CSS Code Across Multiple Files
 
 普通のwebアプリと同じようにCSSファイルをインポートできる。  
 もししたい場合、CSSファイルを分けてそれぞれのコンポーネントにインポートできる
 
-### Chapter 106: Styling React Apps with Vanilla CSS - Pros & Cons
+### Chapter 107: Styling React Apps with Vanilla CSS - Pros & Cons
 
 CSSを使うのいいポイント：html（jsx）と別に扱っている、いつものCSSと同じように書ける、
 もう一人（チーム）に任せることができる  
 CSSを使うの悪いポイント：自分で書くなら理解しないといけない、
 ルールがコンポーネントに限られていないのでコンフリクトが発生する可能性がある
 
-### Chapter 107: Vanilla CSS Styles Are NOT Scoped To Components!
+### Chapter 108: Vanilla CSS Styles Are NOT Scoped To Components!
 
 コンポーネントファイルにインポートしても、CSSファイルはページのheadタグに入るため、
 ページ全体に反映される。インポートされているコンポーネントに限られていない。
 そのため、ルールを気を付けないといけない
 
-### Chapter 108: Styling React Apps with Inline Styles
+### Chapter 109: Styling React Apps with Inline Styles
 
 Reactプロジェクトにインラインスタイルを付けると、普通のhtmlと書き方が違う。  
 style="color: red"などはできないため、style={{color: 'red'}}のほうが正しい  
@@ -830,7 +834,7 @@ style="color: red"などはできないため、style={{color: 'red'}}のほう�
 インラインスタイルを使うの悪いポイント：CSSの書き方が理解しないといけない、
 すべてのコンポーネントのスタイルを書かないといけない、CSSとJSXが区別されていない
 
-### Chapter 109: Dynamic & Conditional Inline Styles
+### Chapter 110: Dynamic & Conditional Inline Styles
 
 インラインスタイルを使うと、動的なスタイルがやりやすくなる。  
 そのままスタイルルールにJavaScript分岐などを書ける
@@ -867,7 +871,7 @@ function App() {
 }
 ```
 
-### Chapter 110: Dynamic & Conditional Styling with CSS Files & CSS Classes
+### Chapter 111: Dynamic & Conditional Styling with CSS Files & CSS Classes
 
 CSSファイルを使うと、動的にスタイルが変わるならコンポーネントにクラスを付けることができる。
 個別なクラスならそのまま分岐を使うといいけど、複数で違う条件があるとテンプレート文字列が使える
@@ -900,7 +904,7 @@ function App() {
 }
 ```
 
-### Chapter 111: Scoping CSS Rules with CSS Modules
+### Chapter 112: Scoping CSS Rules with CSS Modules
 
 CSSファイルをmoduleと名を付けると（例えば、Header.cssからHeader.module.cssへ）
 Reactのビルドシステム内ではそのCSSファイルがそのインポートされているコンポーネント
@@ -909,28 +913,28 @@ CSS Modulesを使うといいポイント：CSSはJSXから別に扱っている
 別開発者が書いてもコンフリクトにならない、コンポーネントファイルに限られている  
 CSS Modulesを使うと悪いポイント：CSSが理解しないといけない、たくさんの小さなCSSファイルがあるはず
 
-### Chapter 112: Introducing "Styled Components" (Third-party Package)
+### Chapter 113: Introducing "Styled Components" (Third-party Package)
 
 外部パッケージstyled-componentsを使って、特別なスタイルがあるコンポーネントを作成することができる。  
 書き方がテンプレートを使うことで、styled.div`CSSがここに書く`のような形になる。
 
-### Chapter 113: Creating Flexible Components with Styled Components
+### Chapter 114: Creating Flexible Components with Styled Components
 
 styled-componentsを使って、childrenやプロップがそのまま使えるのでほぼソースコードの書き方が変わらない
 
-### Chapter 114: Dynamic & Conditional Styling with Styled Components
+### Chapter 115: Dynamic & Conditional Styling with Styled Components
 
 styled-componentsで動的にスタイルを変更する方法についての説明で、
 propsを使ってもいいけど、もしブラウザがすでに使っている命名だとワーニングが出るため、
 規則として自分が定義するスタイルのためのpropsは$から先頭文字を命名したほうがいい。
 
-### Chapter 115: Styled Components: Pseudo Selectors, Nested Rules, & Media Queries
+### Chapter 116: Styled Components: Pseudo Selectors, Nested Rules, & Media Queries
 
 styled-componentsの中で子供のものもスタイルつけることができる。
 そうするため、スタイル定義で子供の前に&を書くと「このコンポーネントの子供」となる。
 :hoverなども同じくできる。
 
-### Chapter 116: Creating Reusable Components & Component Combinations
+### Chapter 117: Creating Reusable Components & Component Combinations
 
 styled-componentsでも個別コンポーネントファイルを作ることができる。それで同じコンポーネントを
 何回も使うこともできる。  
@@ -939,30 +943,30 @@ styled-componentsを使うのいいポイント：早く簡単に追加できる
 styled-componentsを使うの悪いポイント：CSSの書き方が理解しないといけない、
 ReactとCSSの区別がない、たくさん小さめのラッパーコンポーネントを作らないといけない
 
-### Chapter 117: Introducing Tailwind CSS For React App Styling
+### Chapter 118: Introducing Tailwind CSS For React App Styling
 
 tailwindというCSSライブラリの準備と基準書き方についての説明。
 tailwindはクラス名を付けて細かくCSSの設定を調整できる。
 
-### Chapter 118: Adding & Using Tailwind CSS In A React Project
+### Chapter 119: Adding & Using Tailwind CSS In A React Project
 
 tailwindの設定をカスタマイズもできる。そして、普通のCSSルールを追加することもできる。
 
-### Chapter 119: Tailwind: Media Queries & Pseudo Selectors
+### Chapter 120: Tailwind: Media Queries & Pseudo Selectors
 
 クラス名にhover:やmd:などの書き方で、スクリーンサイズや動作によりいろいろなスタイル
 を付けることもできる。
 
-### Chapter 120: Dynamic & Conditional Styling with Tailwind
+### Chapter 121: Dynamic & Conditional Styling with Tailwind
 
 tailwindを使って動的スタイルのやり方についての説明
 
-### Chapter 121: Migrating The Demo App to Tailwind CSS
+### Chapter 122: Migrating The Demo App to Tailwind CSS
 
 最後のスタイルをtailwindにマイグレーション完了  
 [プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/07%20Styling/06-tailwind-finished)
 
-### Chapter 122: Tailwind CSS: Pros & Cons
+### Chapter 123: Tailwind CSS: Pros & Cons
 
 Reactでtailwindを使うには便利点が多い  
 tailwindを使うのいいポイント：CSSあまり知らなくても使える、開発が早い、ルールを定義しないためコンフリクトがない、
@@ -995,28 +999,28 @@ export default function App() {
 
 Reactのデバグについての説明とアドバイスになる
 
-### Chapter 123: Module Introduction
+### Chapter 124: Module Introduction
 
 Reactのエラーメッセージやブラウザの開発者ツールの使い方がこれから説明がある
 
-### Chapter 124: The Starting Project
+### Chapter 125: The Starting Project
 
 エラー潰し用のプロジェクトのインポート  
 [プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/06%20Debugging/01-starting-project)
 
-### Chapter 125: Understanding React Error Messages
+### Chapter 126: Understanding React Error Messages
 
 エラーメッセージの読み方とバグ探しの流れについての説明
 
-### Chapter 126: Using the Browser Debugger & Breakpoints
+### Chapter 127: Using the Browser Debugger & Breakpoints
 
 ブラウザの開発者ツールでデバッグモードとブレイクポイントの使い方とバグ探しの流れについての説明
 
-### Chapter 127: Understanding React's "Strict Mode"
+### Chapter 128: Understanding React's "Strict Mode"
 
 StrictModeという機能の使い方と便利点についての説明
 
-### Chapter 128: Using the React DevTools (Browser Extension)
+### Chapter 129: Using the React DevTools (Browser Extension)
 
 React Development Toolsというブラウザエクステンションの使い方と便利点についての説明
 
@@ -1061,25 +1065,25 @@ export default function App() {
 
 Reactのもう少しアドバンスト機能のRefsとPortalsの説明になる
 
-### Chapter 129: Module Introduction & Starting Project
+### Chapter 130: Module Introduction & Starting Project
 
 ReactのRefsとPortalsという機能の軽い説明とプロジェクトの目標の説明  
 [プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/08%20Refs%20Portals/01-starting-project)
 
-### Chapter 130: Repetition: Managing User Input with State (Two-Way Binding)
+### Chapter 131: Repetition: Managing User Input with State (Two-Way Binding)
 
 復讐：インプットの値と画面表示値の連携のやり方の再説明
 
-### Chapter 131: Repetition: Fragments
+### Chapter 132: Repetition: Fragments
 
 復讐：フラグメントエレメントの再説明
 
-### Chapter 132: Introducing Refs: Connecting & Accessing HTML Elements via Refs
+### Chapter 133: Introducing Refs: Connecting & Accessing HTML Elements via Refs
 
 useRefというReactフックの説明と書き方の紹介。  
 refをプロップとして渡したら、そのref変数を関数などに使えば連携されているエレメントもそのまま使える
 
-### Chapter 133: Manipulating the DOM via Refs
+### Chapter 134: Manipulating the DOM via Refs
 
 refを使うとDOMのエレメントを直接いじることができるけど、それはReactの規則外なので注意が必要
 
@@ -1107,22 +1111,22 @@ function App() {
 }
 ```
 
-### Chapter 134: Refs vs State Values
+### Chapter 135: Refs vs State Values
 
 ステートとレフの違い  
 ステート：変更したらコンポーネントが再ロードする、UIに影響がある値に使ったほうがお勧め、
 後ろでしか使わない値に使う必要がない  
 レフ：変更したらコンポーネントが再ロードしない、直接DOMのアクセスと変更できる、ブラウザAPIもアクセスできる
 
-### Chapter 135: Adding Challenges to the Demo Project
+### Chapter 136: Adding Challenges to the Demo Project
 
 プロジェクトの次のステップの準備のため、再利用できるコンポーネントの作成と構造
 
-### Chapter 136: Setting Timers & Managing State
+### Chapter 137: Setting Timers & Managing State
 
 タイマーゲームの準備のために関数や変数の作成と構造
 
-### Chapter 137: Using Refs for More Than "DOM Element Connections"
+### Chapter 138: Using Refs for More Than "DOM Element Connections"
 
 レフでDOMのエレメントの変更だけではなく、後ろでしか使われていない値も連携と管理できる
 
@@ -1143,11 +1147,11 @@ function handleStopWorkout() {
 }
 ```
 
-### Chapter 138: Adding a Modal Component
+### Chapter 139: Adding a Modal Component
 
 Reactでモーダルエレメントの作成・表示のやり方の説明
 
-### Chapter 139: Forwarding Refs to Custom Components
+### Chapter 140: Forwarding Refs to Custom Components
 
 refを別のコンポーネントに渡すには、プロップだけじゃ足りないので、
 ReactのフックforwardRefを使ってできる。
@@ -1192,7 +1196,7 @@ const Input = React.forwardRef(function Input({label, ...props}, ref) {
 });
 ```
 
-### Chapter 140: Exposing Component APIs via the useImperativeHandle Hook
+### Chapter 141: Exposing Component APIs via the useImperativeHandle Hook
 
 useImperativeHandleというフックでコンポーネントでメソッドの行動を定義して、refで連携している
 行動もそれを呼ぶことができる
@@ -1246,24 +1250,24 @@ const Form = React.forwardRef(function Form(props, ref) {
 });
 ```
 
-### Chapter 141: More Examples: When To Use Refs & State
+### Chapter 142: More Examples: When To Use Refs & State
 
 setTimeoutとsetIntervalという時間を計測ブラウザメソッドの違いと使い方の説明
 
-### Chapter 142: Sharing State Across Components
+### Chapter 143: Sharing State Across Components
 
 ステートとメソッドを別コンポーネントに渡す方法（復讐）
 
-### Chapter 143: Enhancing the Demo App "Result Modal"
+### Chapter 144: Enhancing the Demo App "Result Modal"
 
 簡単な割り算でゲームのスコアを計算して表示する方法
 
-### Chapter 144: Closing the Modal via the ESC (Escape) Key
+### Chapter 145: Closing the Modal via the ESC (Escape) Key
 
 モーダルを閉じるのにescキーを押下することもできるが、現在閉じるボタンにしか機能が入れていないので、
 onCloseというプロップに機能を入れたらちゃんとした動きになる
 
-### Chapter 145: Introducing and Understanding "Portals"
+### Chapter 146: Introducing and Understanding "Portals"
 
 モーダルなど実際に使われているところとDOMで入れたい場所が違う場合、
 ポータルという機能が移動してくれる
@@ -1313,70 +1317,70 @@ export default function Toast({ message }) {
 
 今までの内容すべての練習プロジェクトになる
 
-### Chapter 146: Module Introduction & Starting Project
+### Chapter 147: Module Introduction & Starting Project
 
 これからの練習プロジェクトの目標の説明  
 レッスンを進め前に実際にやってみること  
 [プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/09%20Practice%20Project%20-%20Project%20Management/01-starting-project)
 
-### Chapter 147: Adding a "Projects Sidebar" Component
+### Chapter 148: Adding a "Projects Sidebar" Component
 
 左のメニューの構造を作成する
 
-### Chapter 148: Styling the Sidebar & Button with Tailwind CSS
+### Chapter 149: Styling the Sidebar & Button with Tailwind CSS
 
 左のメニューとその中のボタンのスタイル
 
-### Chapter 149: Adding the "New Project" Component & A Reusable "Input" Component
+### Chapter 150: Adding the "New Project" Component & A Reusable "Input" Component
 
 インプットフォームのコンポーネントの作成とプロジェクトの構造
 
-### Chapter 150: Styling Buttons & Inputs with Tailwind CSS
+### Chapter 151: Styling Buttons & Inputs with Tailwind CSS
 
 インプットとボタンのスタイル
 
-### Chapter 151: Splitting Components to Split JSX & Tailwind Styles (for Higher Reusability)
+### Chapter 152: Splitting Components to Split JSX & Tailwind Styles (for Higher Reusability)
 
 プロジェクトが選択されていない場合表示する画面の作成と同じボタン使うからボタンコンポーネントの作成
 
-### Chapter 152: Managing State to Switch Between Components
+### Chapter 153: Managing State to Switch Between Components
 
 ステートで表示されている画面の切り替えができるように機能追加
 
-### Chapter 153: Collecting User Input with Refs & Forwarded Refs
+### Chapter 154: Collecting User Input with Refs & Forwarded Refs
 
 プロジェクト作成画面の入力を取得してステートとして保持する
 
-### Chapter 154: Handling Project Creation & Updating the UI
+### Chapter 155: Handling Project Creation & Updating the UI
 
 プロジェクト作成するとサイドバーメニューに表示されるように機能追加
 
-### Chapter 155: Validating User Input & Showing an Error Modal via useImperativeHandle
+### Chapter 156: Validating User Input & Showing an Error Modal via useImperativeHandle
 
 インプットバリデーションのためエラーモーダルの作成と表示（スタイルはまだ）
 
-### Chapter 156: Styling the Modal via Tailwind CSS
+### Chapter 157: Styling the Modal via Tailwind CSS
 
 モーダルのスタイルとプロジェクト作成画面のキャンセルボタンの機能追加
 
-### Chapter 157: Making Projects Selectable & Viewing Project Details
+### Chapter 158: Making Projects Selectable & Viewing Project Details
 
 サイドバーメニューのプロジェクト選択機能追加とデバグ
 
-### Chapter 158: Handling Project Deletion
+### Chapter 159: Handling Project Deletion
 
 選択されてプロジェクトの表示画面でプロジェクトの削除できるようにボタン追加
 
-### Chapter 159: Adding "Project Tasks" & A Tasks Component
+### Chapter 160: Adding "Project Tasks" & A Tasks Component
 
 プロジェクトにタスク項目の追加構造作成（まだ動かない）
 
-### Chapter 160: Managing Tasks & Understanding Prop Drilling
+### Chapter 161: Managing Tasks & Understanding Prop Drilling
 
 プロップドリルを使って、AppコンポーネントからNewTaskコンポーネントまでステート管理を渡して、
 タスク管理できるように作成
 
-### Chapter 161: Clearing Tasks & Fixing Minor Bugs
+### Chapter 162: Clearing Tasks & Fixing Minor Bugs
 
 タスク削除機能追加、小さな不具合解決。
 
@@ -1384,55 +1388,56 @@ export default function Toast({ message }) {
 
 Reactのアドバンスト機能についての紹介
 
-### Chapter 162: Module Introduction
+### Chapter 163: Module Introduction
 
 このコースセクションの内容の紹介：  
 * プロップドリルとその解決方法
 * コンポーネント構成
 * コンテキストでステート渡し
-* レデューサーの使い方
+* レデューサーの使い方  
+[プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/10%20Advanced%20State%20Management%20with%20Context%20useReducer/01-starting-project)
 
-### Chapter 163: Understanding Prop Drilling & Project Overview
+### Chapter 164: Understanding Prop Drilling & Project Overview
 
 親コンポーネントから子コンポーネントにプロップを渡して、さらにその子コンポーネントの子コンポーネントやそれよりも深いコンポーネントに渡すために使わずに渡しているだけ時はプロップドリルという。  
 
-### Chapter 164: Prop Drilling: Component Composition as a Solution
+### Chapter 165: Prop Drilling: Component Composition as a Solution
 
 もし複数層にプロップを渡すとき、一番上のコンポーネントで下の層を構成して、ほかのコンポーネントをラッパーに変えることができるけど、これは毎回使うことではなく、ほかのドリル解決方法とともに使えること。
 
-### Chapter 165: Introducing the Context API
+### Chapter 166: Introducing the Context API
 
 ContextというReactのAPIを使って、アプリのどの範囲でもステートなどを管理することができ、
 簡単に渡したり更新したりすることができる。
 
-### Chapter 166: Creating & Providing The Context
+### Chapter 167: Creating & Providing The Context
 
 Contextの生成方法とコンポーネントのラップ方法の説明
 
-### Chapter 167: Consuming the Context
+### Chapter 168: Consuming the Context
 
 Contextを使うコンポーネントに渡して、ステートとして使う方法の説明
 
-### Chapter 168: Linking the Context to State
+### Chapter 169: Linking the Context to State
 
 Contextに関数も入れて子コンポーネントに渡してステートを更新することもできる
 
-### Chapter 169: A Different Way Of Consuming Context
+### Chapter 170: A Different Way Of Consuming Context
 
 useContextフックを使うことがベストなのだが、もう一つのやり方が存在している。
 それは、context.Consumerのコンポーネントを使ってjsxコードをラップする方法になる。
 古い方法でモダンなプロジェクトはほとんどuseContextフックを使っているはず。
 
-### Chapter 170: What Happens When Context Values Change?
+### Chapter 171: What Happens When Context Values Change?
 
 ステートと同じように、もしコンテキストの値に何か変更があった場合、使っているコンポーネント
 が再実行されることについての説明
 
-### Chapter 171: Migrating the Entire Demo Project to use the Context API
+### Chapter 172: Migrating the Entire Demo Project to use the Context API
 
 Contextを使って他のいつくかのところのプロップを削除してそのままコンテキストを使うように書き換える
 
-### Chapter 172: Outsourcing Context & State Into a Separate Provider Component
+### Chapter 173: Outsourcing Context & State Into a Separate Provider Component
 
 コンテキストとステート管理関係のコードを別ファイルに移動して、それがラッパーコンポーネントに変更する
 
@@ -1468,11 +1473,11 @@ export default function ThemeContextProvider({children}) {
 }
 ```
 
-### Chapter 173: Introducing the useReducer Hook
+### Chapter 174: Introducing the useReducer Hook
 
 useReducerでもステートの管理ができて、複雑な値をシンプルに変換してくれる
 
-### Chapter 174: Dispatching Actions & Editing State with useReducer
+### Chapter 175: Dispatching Actions & Editing State with useReducer
 
 useReducerのdispatch関数の作り方と使い方の説明、useStateとの違い
 
@@ -1548,5 +1553,104 @@ function App() {
 
 useEffectを使ってブラウザのエフェクトの使い方
 
-### Chapter 175: Module Introduction & Starting Project
+### Chapter 176: Module Introduction & Starting Project
+
+useEffectの使い方を説明するためのプロジェクトの準備  
+[プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/11%20Side%20Effects%20useEffect/01-starting-project)
+
+### Chapter 177: What's a "Side Effect"? A Thorough Example
+
+画面の実行には必要でない処理はエフェクトという。
+1つの例の作り方
+
+### Chapter 178: A Potential Problem with Side Effects: An Infinite Loop
+
+もし生JavaScriptを使ってエフェクト（今回はエンドユーザの現地の取得）の処理をすると、
+問題が発生する可能性がある、例えば無限ループ。
+解決方法としてuseEffectを使おう。
+
+### Chapter 179: Using useEffect for Handling (Some) Side Effects
+
+useEffectの書き方には2つの引数があって、1つ目は使いたい処理の関数、2つ目は配列。
+配列の中にはあとで説明があるけど、とりあえず空でも配列が必要。
+なければ無限ループの問題が解決しない。
+
+### Chapter 180: Not All Side Effects Need useEffect
+
+useEffectは必ずブラウザのエフェクトを使う時必要わけはない。
+必要の条件は、コンポーネント関数が実行した後の必要なエフェクトや無限ループになりそうなエフェクト。
+
+### Chapter 181: useEffect Not Needed: Another Example  
+
+useEffectは同期プロセスも必要ない。なぜかというと、同期プロセスは瞬間的に終わるため
+コンポーネント関数の実行が終わるまで必要はない。逆に、関数の前に処理があっても問題ない
+
+### Chapter 182: Preparing Another Use-Case For useEffect
+
+モーダルの表示方法をuseImperativeからプロップに変えるけど、
+普通のプロップだとモーダルの表示が期待通りではないのでまだ足りない。
+useEffectを使う予定
+
+### Chapter 183: Using useEffect for Syncing With Browser APIs
+
+モーダルが表示するため、ダイアログのrefとモーダルコンポーネントの連携が必要で、それは
+コンポーネント関数の実行が終わらせないといけない。そのため、useEffectでエフェクトの処理を
+コンポーネント関数のあとに実行させるようにする。
+
+### Chapter 184: Understanding Effect Dependencies
+
+useEffectのデペンデンシー配列には、また実行したほうがいい時と関係があるプロップやステート値を入れる。
+その値が変わったら、useEffectが再実行する
+
+### Chapter 185: Fixing a Small Bug
+
+escキーでもモーダル閉じることができるため、特別にモーダル閉じる処理を渡さないといけない。
+
+### Chapter 186: Preparing Another Problem That Can Be Fixed with useEffect
+
+モーダルでタイマーを使って自動的に閉じる処理を入れたいけど、
+もし手動でモーダルを閉じるとタイマーが止まらないためuseEffectを使ったほうがいい
+
+### Chapter 187: Introducing useEffect's Cleanup Function
+
+useEffectのコールバック関数の後、まだフックのブロックの中、returnを使ってまた関数を入れると、
+そのreturnした関数をコンポーネントがアンマウントかuseEffectが再実行する直前実行することになる。
+これでタイマーが止まるように設定できる
+
+### Chapter 188: The Problem with Object & Function Dependencies
+
+JavaScriptには、関数の物理的な形はオブジェクトになる。
+そのため、コンポーネントが再実行すると、関数も再作成で前の関数と比較すると、
+内部的に違うオブジェクトに見える。
+そして、useEffectのデペンデンシー配列に関数やオブジェクトを入れると、
+毎回親コンポーネントが再実行するとその値が変わったと見えるので無限ループになっちゃう。
+解決方法として、useCallbackというフックがある。
+
+### Chapter 189: The useCallback Hook
+
+useCallbackで関数のラッパーを作ると、その関数を別に作成して保持する。
+毎回コンポーネントが再実行すると再作成にならず、保持している関数が使われる。
+useEffectと同じように、配列にプロップやステートの値を入れると、その値が変わると再作成になる。
+
+### Chapter 190: useEffect's Cleanup Function: Another Example
+
+またuseEffectのreturnを使ってモーダルの自動閉じるタイマーを画面に表示させることができる
+
+### Chapter 191: Optimizing State Updates
+
+setIntervalでステートが10ミリ秒ごとに変更があるためそのコンポーネントの再実行がすごく多くなる。
+ほかの関係ないコードも再実行しっちゃうため、別コンポーネントでsetIntervalとその関係のステート
+を移動したほうが効率的にいい。
+
+## Section 12: Practice Project: Building a Quiz App
+
+前のセクションのコンセプトを使ってプロジェクトで練習する。
+useEffectなどを使う
+
+### Chapter 192: Module Introduction & Starting Project
+
+プロジェクトの事前準備。今回は一緒に作って、なぜこんな風に作るのかを理解しながら作る。
+[プロジェクトソース](https://github.com/academind/react-complete-guide-course-resources/tree/main/code/13%20Demo%20Project%20-%20React%20Quiz/01-starting-project)
+
+### Chapter 193: A First Component & Some State
 
